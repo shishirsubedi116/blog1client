@@ -1,6 +1,7 @@
 import Blogs from '@/components/Blogs'
 import Image from 'next/image'
 import React from 'react'
+import background from '../../../../public/background.webp'
 
 const Page = ({params}) => {
     return (
@@ -16,7 +17,7 @@ const Page = ({params}) => {
             <section className="container mx-auto my-8 px-4 md:w-3/4 sm:w-11/12">
                 <div className="flex flex-col items-center">
                     <div className="w-full p-2">
-                        <Image width={300} height={400} src="https://media.istockphoto.com/id/1213633461/photo/modern-interior-of-a-bedroom-with-light-green-walls-night-evening-lighting-3d-rendering.jpg?s=612x612&w=0&k=20&c=DRISjC5TES08dDEEIkFgvnfsHzpGSwCsrs73gpUtqxc=" alt="Blog Image" className="w-full h-auto object-cover" />
+                        <Image width={300} height={400} src={background} alt="Blog Image" className="w-full h-auto object-cover" />
                     </div>
                     <div className="w-full p-4">
                         <h2 className="text-2xl font-bold mb-2">Sub Topic of the Blog</h2>
